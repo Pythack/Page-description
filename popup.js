@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", event => {
             } else {
                 document.querySelector("#descdiv").innerHTML = "<span style='color: hsl(0, 50%, 50%)'>No description on this page</span>";
             }
-        }, error => {document.querySelector("#descdiv").innerHTML = "<span style='color: hsl(0, 50%, 50%)'>Page did not respond; try refreshing</span>";});
+        }, error => {document.querySelector("#descdiv").innerHTML = "<span style='color: hsl(0, 50%, 50%)'>Page did not respond; try refreshing it. You might also be on a restricted URL.</span>";});
    
      });
 });
