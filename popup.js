@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", event => {
         
         const askfordesc = browser.tabs.sendMessage(activeTabId, {request:"get-description"});
         askfordesc.then(async (response) => {
-            if (response != "") {
+            if (response != null) {
                 document.querySelector("#descdiv").innerHTML = "<span style='color: hsl(219, 50%, 50%)'>" + response + "</span>";
             } else {
                 document.querySelector("#descdiv").innerHTML = "<span style='color: hsl(0, 50%, 50%)'>No description on this page</span>";

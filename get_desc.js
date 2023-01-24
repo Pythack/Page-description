@@ -10,7 +10,7 @@ browser.runtime.onMessage.addListener((message, sender, sendResponse) => { // Li
             const description = descriptionmeta.content;
             sendResponse(description);
           } else {
-            sendResponse("");
+            sendResponse(null);
           }
           break;
       default:
