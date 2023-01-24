@@ -5,8 +5,8 @@ if (typeof browser === "undefined") {
 
 document.addEventListener("DOMContentLoaded", event => {
     browser.tabs.query({active: true, currentWindow: true}, function(tabs) {
-        var activeTab = tabs[0];
-        var activeTabId = activeTab.id;
+        const activeTab = tabs[0];
+        const activeTabId = activeTab.id;
         
         const askfordesc = browser.tabs.sendMessage(activeTabId, {request:"get-description"});
         askfordesc.then(async (response) => {
