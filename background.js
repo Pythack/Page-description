@@ -20,5 +20,7 @@ function updateIcon(tab) {
 
 browser.tabs.onActivated.addListener(updateIcon);
 browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-    updateIcon({tabId: tab.id})
+    browser.tabs.query({active: true, currentWindow: true}, tabs => {
+        updateIcon({tabId: tabs[0].id})
+    });
 });

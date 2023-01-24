@@ -4,7 +4,7 @@ if (typeof browser === "undefined") {
 
 
 document.addEventListener("DOMContentLoaded", event => {
-    browser.tabs.query({active: true, currentWindow: true}, function(tabs) {
+    browser.tabs.query({active: true, currentWindow: true}, tabs => {
         const activeTab = tabs[0];
         const activeTabId = activeTab.id;
         

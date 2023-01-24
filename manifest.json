@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Page description",
   "author": "Pythack",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Finds a description of the current webpage. ",
   "background": {
     "service_worker": "background.js"
@@ -14,17 +14,11 @@
     }
   ],
   "host_permissions": ["<all_urls>"],
-  "permissions": ["storage", "tabs"],
+  "permissions": ["tabs"],
   "action": {
     "default_icon": "./images/iconnotok.png",
     "default_popup": "./popup.html",
     "default_title": "Page description",
     "browser_style": true
-  },
-  "web_accessible_resources": [
-    {
-      "resources": ["./images/"],
-      "matches": ["<all_urls>"]
-    }
-  ]
+  }
 }
