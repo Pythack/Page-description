@@ -3,7 +3,7 @@
   "name": "Page description",
   "author": "Pythack",
   "version": "0.0.1",
-  "description": "Finds a description of the actual page. ",
+  "description": "Finds a description of the current webpage. ",
   "background": {
     "service_worker": "background.js"
   },
