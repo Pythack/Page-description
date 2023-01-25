@@ -20,7 +20,7 @@
   },
   "host_permissions": ["<all_urls>"],
   "options_page": "options/options.html",
-  "permissions": ["storage", "tabs"],
+  "permissions": ["storage", "activeTab"],
   "action": {
     "default_icon": "./images/iconnotok.png",
     "default_popup": "./popup/popup.html",
