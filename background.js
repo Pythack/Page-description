@@ -24,3 +24,9 @@ browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
         updateIcon({tabId: tabs[0].id})
     });
 });
+
+chrome.runtime.onInstalled.addListener(details => {
+    if (details.reason == "install") {
+      browser.storage.local.set({fontsize: "20", fontunit: "px"});
+    }
+  });

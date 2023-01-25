@@ -19,10 +19,11 @@
     "128": "images/icon.png"
   },
   "host_permissions": ["<all_urls>"],
-  "permissions": ["tabs"],
+  "options_page": "options/options.html",
+  "permissions": ["storage", "tabs"],
   "action": {
     "default_icon": "./images/iconnotok.png",
-    "default_popup": "./popup.html",
+    "default_popup": "./popup/popup.html",
     "default_title": "Page description",
     "browser_style": true
   }
