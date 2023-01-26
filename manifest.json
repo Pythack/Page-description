@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Page description",
   "author": "Pythack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Finds a description of the current webpage. ",
   "background": {
     "service_worker": "background.js"
