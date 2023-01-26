@@ -4,29 +4,29 @@ if (typeof browser === "undefined") {
 
 function updateIcon(tab) {
     const activeTabId = tab.tabId;
-    
-    const askfordesc = browser.tabs.sendMessage(activeTabId, {request:"get-description"});
+
+    const askfordesc = browser.tabs.sendMessage(activeTabId, { request: "get-description" });
     askfordesc.then(async (response) => {
         if (response != null) {
-            browser.action.setIcon({path: './images/iconok.png'});
+            browser.action.setIcon({ path: './images/iconok.png' });
         } else {
-            browser.action.setIcon({path: './images/iconnotok.png'});
+            browser.action.setIcon({ path: './images/iconnotok.png' });
         }
     }, error => {
-        browser.action.setIcon({path: './images/iconerror.png'});
+        browser.action.setIcon({ path: './images/iconnotok.png' });
     });
 
 }
 
 browser.tabs.onActivated.addListener(updateIcon);
 browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-    browser.tabs.query({active: true, currentWindow: true}, tabs => {
-        updateIcon({tabId: tabs[0].id})
+    browser.tabs.query({ active: true, currentWindow: true }, tabs => {
+        updateIcon({ tabId: tabs[0].id })
     });
 });
 
 chrome.runtime.onInstalled.addListener(details => {
     if (details.reason == "install") {
-      browser.storage.local.set({fontsize: "20", fontunit: "px"});
+        browser.storage.local.set({ fontsize: "20", fontunit: "px" });
     }
-  });
+});
