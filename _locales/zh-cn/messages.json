@@ -1,0 +1,14 @@
+{
+  "appName": {
+    "message": "页面描述"
+  },
+  "appDesc": {
+    "message": "查找当前网页的说明。"
+  },
+  "noDesc": {
+    "message": "此页面上没有描述"
+  },
+  "noResponse": {
+    "message": "佩奇没有回应;尝试刷新它。您可能还位于受限的 URL 上。"
+  }
+}

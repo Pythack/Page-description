@@ -1,0 +1,14 @@
+{
+  "appName": {
+    "message": "Description de la page"
+  },
+  "appDesc": {
+    "message": "Affiche la description de la page actuelle."
+  },
+  "noDesc": {
+    "message": "Pas de description sur cette page"
+  },
+  "noResponse": {
+    "message": "La page n'a pas répondu; essayez de l'actualiser. Vous êtes peut-être sur une URL restreinte."
+  }
+}

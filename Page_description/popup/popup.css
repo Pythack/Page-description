@@ -1,0 +1,22 @@
+html {
+    width: 300px;
+    height: auto;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#descdiv, #descdiv span {
+    margin: 10px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 2.5ex;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
